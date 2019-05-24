@@ -1,0 +1,18 @@
+冒泡排序主要是讲相邻两个的数比较大小，如果符合判断条件，则互换，不符合
+则继续进行。
+下面是源代码：
+l=[int(x) for x in input().split()]
+for i in range(0,len(l)):
+    for j in range(0,len(l)-1):
+        if l[j]>l[j+1]:
+            l[j],l[j+1]=l[j+1],l[j]
+print(l)   
+快速排序：
+l=[int(x) for x in input().split()]
+for i in range(0,len(l)):
+    for j in range(i,len(l)):
+        if l[i]>l[j]:
+            l[i],l[j]=l[j],l[i]
+        else:
+            continue
+print(l) 
